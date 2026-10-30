@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sections and Colours</title>
+    <meta name="description" content="Six sections exploring text and background colours with TailwindCSS.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --content-width: 48rem;
+        }
+
+        section {
+            @apply px-6 py-10;
+        }
+
+        section > * {
+            max-width: var(--content-width);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        section h2 {
+            @apply mb-4 text-3xl font-bold tracking-tight;
+        }
+
+        section p {
+            @apply mb-4 text-lg leading-relaxed;
+        }
+    </style>
+    <!-- Philipe Mendes Silva 83223 -->
+</head>
+<body class="font-sans">
+    <header class="bg-slate-900 px-6 py-12 text-center text-white">
+        <p class="mb-3 text-sm uppercase tracking-widest">HTML and TailwindCSS</p>
+        <h1 class="text-4xl font-bold md:text-5xl">Sections and Colours</h1>
+    </header>
+
+    <main>
+        <section class="bg-blue-100 text-blue-950">
+            <h2>Section One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lectus vel neque faucibus tincidunt. Donec sit amet ligula a erat tincidunt consequat.</p>
+            <p>Sed pretium, justo eget malesuada tempor, neque erat facilisis libero, vitae placerat velit sapien vitae massa. Nulla facilisi. Etiam a tortor vitae neque cursus blandit.</p>
+        </section>
+
+        <section class="bg-emerald-950 text-emerald-50">
+            <h2>Section Two</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lectus vel neque faucibus tincidunt. Donec sit amet ligula a erat tincidunt consequat.</p>
+            <p>Sed pretium, justo eget malesuada tempor, neque erat facilisis libero, vitae placerat velit sapien vitae massa. Nulla facilisi. Etiam a tortor vitae neque cursus blandit.</p>
+        </section>
+
+        <section class="bg-amber-100 text-amber-950">
+            <h2>Section Three</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lectus vel neque faucibus tincidunt. Donec sit amet ligula a erat tincidunt consequat.</p>
+            <p>Sed pretium, justo eget malesuada tempor, neque erat facilisis libero, vitae placerat velit sapien vitae massa. Nulla facilisi. Etiam a tortor vitae neque cursus blandit.</p>
+        </section>
+
+        <section class="bg-purple-950 text-purple-50">
+            <h2>Section Four</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lectus vel neque faucibus tincidunt. Donec sit amet ligula a erat tincidunt consequat.</p>
+            <p>Sed pretium, justo eget malesuada tempor, neque erat facilisis libero, vitae placerat velit sapien vitae massa. Nulla facilisi. Etiam a tortor vitae neque cursus blandit.</p>
+        </section>
+
+        <section class="bg-rose-100 text-rose-950">
+            <h2>Section Five</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lectus vel neque faucibus tincidunt. Donec sit amet ligula a erat tincidunt consequat.</p>
+            <p>Sed pretium, justo eget malesuada tempor, neque erat facilisis libero, vitae placerat velit sapien vitae massa. Nulla facilisi. Etiam a tortor vitae neque cursus blandit.</p>
+        </section>
+
+        <section class="bg-stone-800 text-stone-50">
+            <h2>Section Six</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lectus vel neque faucibus tincidunt. Donec sit amet ligula a erat tincidunt consequat.</p>
+            <p>Sed pretium, justo eget malesuada tempor, neque erat facilisis libero, vitae placerat velit sapien vitae massa. Nulla facilisi. Etiam a tortor vitae neque cursus blandit.</p>
+        </section>
+    </main>
+
+    <footer class="bg-slate-100 px-6 py-8 text-center text-slate-900">
+        <p class="mb-4 italic">An exercise in colour and contrast.</p>
+        <a href="../index.html" class="font-semibold underline hover:text-blue-800">
+            Back to Home page
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block with Text</title>
+    <meta name="description" content="A text hero block with a colour gradient and animated headings.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .enter-top {
+            animation: enter-top 1s ease-out both;
+        }
+
+        .enter-left {
+            animation: enter-left 1s ease-out both;
+        }
+
+        @keyframes enter-top {
+            from { opacity: 0; transform: translateY(-60px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes enter-left {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .enter-top, .enter-left {
+                animation: none;
+            }
+        }
+    </style>
+    <!-- Philipe Mendes Silva 83223 -->
+</head>
+<body class="bg-white font-sans text-slate-900">
+    <header class="flex min-h-[60vh] flex-col justify-center overflow-hidden bg-linear-to-b from-purple-700 to-purple-950 px-6 py-16 text-center text-white md:min-h-[80vh]">
+        <h1 class="enter-top mb-6 text-5xl font-bold tracking-tight md:text-7xl">
+            Welcome to my website
+        </h1>
+        <h2 class="enter-left text-2xl leading-relaxed md:text-3xl">
+            Learning to build for the web
+        </h2>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-6 py-10">
+        <p class="mb-6 text-lg leading-relaxed">
+            This exercise uses a colour gradient, large headings and
+            simple CSS animations to create a text-only hero block.
+        </p>
+        <a href="../index.html" class="font-semibold text-purple-900 underline hover:text-purple-700">
+            Back to Home page
+        </a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block with Video</title>
+    <meta name="description" content="A hero block with a looping background video, poster image and dark overlay.">
+    <link rel="preload" href="assets/videos/hero-still.jpg" as="image">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .hero-heading {
+            text-shadow: 2px 2px 4px black;
+        }
+    </style>
+    <!-- Philipe Mendes Silva 83223 -->
+</head>
+<body class="bg-white font-sans text-slate-900">
+    <header class="relative flex min-h-[60vh] flex-col justify-center overflow-hidden bg-slate-900 px-6 py-16 text-center text-white md:min-h-[80vh]">
+        <video
+            class="absolute inset-0 h-full w-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="assets/videos/hero-still.jpg"
+            aria-hidden="true">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+
+        <div class="relative">
+            <h1 class="hero-heading mb-6 text-5xl font-bold tracking-tight md:text-7xl">
+                Education for Life
+            </h1>
+            <h2 class="hero-heading text-2xl leading-relaxed md:text-3xl">
+                A brighter career and future
+            </h2>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-6 py-10">
+        <p class="mb-6 text-lg leading-relaxed">
+            This hero block includes a muted video that repeats in the
+            background. A poster image appears while the video loads.
+        </p>
+        <a href="../index.html" class="font-semibold text-blue-900 underline hover:text-blue-700">
+            Back to Home page
+        </a>
+    </main>
+</body>
+</html>

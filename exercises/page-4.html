@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent van Gogh</title>
+    <meta name="description" content="The Dutch post-impressionist whose works are characterised by bold colours and expressive brushwork.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        body {
+            font-family: "Lato", sans-serif;
+            @apply bg-amber-50 text-slate-900;
+        }
+
+        h1, h2 {
+            font-family: "Merriweather", serif;
+        }
+
+        header {
+            @apply bg-blue-900 px-6 py-12 text-center text-white;
+        }
+
+        header h1 {
+            @apply mb-6 text-4xl font-bold md:text-6xl;
+        }
+
+        header p {
+            @apply mx-auto max-w-3xl text-lg leading-relaxed;
+        }
+
+        nav {
+            @apply bg-blue-100 px-6 py-5 text-center;
+        }
+
+        nav a {
+            @apply mx-2 inline-block py-2;
+        }
+
+        main {
+            @apply mx-auto max-w-3xl px-6 py-10;
+        }
+
+        section {
+            @apply mb-10;
+        }
+
+        section h2 {
+            @apply mb-5 text-2xl font-bold text-blue-900 md:text-3xl;
+        }
+
+        p {
+            @apply mb-5 text-lg leading-relaxed;
+        }
+
+        img {
+            @apply mb-8 h-auto w-full shadow-lg;
+        }
+
+        a {
+            @apply text-blue-900 underline underline-offset-4;
+        }
+
+        a:hover {
+            @apply text-blue-700;
+        }
+
+        a:focus-visible {
+            @apply outline-2 outline-offset-4 outline-blue-800;
+        }
+
+        footer {
+            @apply bg-blue-100 px-6 py-8 text-center;
+        }
+    </style>
+
+    <!-- Philipe Mendes Silva 83223 -->
+</head>
+<body>
+    <header id="top">
+        <h1>Vincent van Gogh</h1>
+        <p>
+            Among the most famous figures in Western art, Vincent van Gogh
+            (1853-1890) was a Dutch post-impressionist painter who created
+            about 2,100 artworks. They include landscapes, still lifes,
+            portraits and self-portraits, and are characterised by bold
+            colours and dramatic, impulsive and expressive brushwork.
+        </p>
+    </header>
+
+    <nav aria-label="Page navigation">
+        <a href="#arles">The Arles Years</a>
+        <a href="#life">Life, Suffering and Death</a>
+        <a href="page-5.html">Ireland's Attractions</a>
+    </nav>
+
+    <main>
+        <section id="arles">
+            <h2>The Arles Years</h2>
+
+            <p>
+                Van Gogh's two years at Arles in France (1888–89) were one
+                of his most artistically productive periods. He was enchanted
+                by the local countryside and light; his works from this
+                period are rich in yellow, ultramarine and mauve. Among the
+                most well-known works of that time is an oil painting of his
+                rented room, entitled <i>Bedroom in Arles</i>.
+            </p>
+
+            <img src="assets/img/bedroom-arles-van-gogh.jpg"
+                 alt="Van Gogh's painting of his bedroom in Arles">
+
+            <p>
+                In Arles, the painter began a friendship with the owners of
+                a local hotel, known as the Cafe de la Gare. The building
+                inspired two more famous creations. The first of which is
+                known as <i>The Yellow House</i>.
+            </p>
+
+            <img src="assets/img/yellow-house-van-gogh.jpg"
+                 alt="The Yellow House painted by Vincent van Gogh"
+                 loading="lazy">
+
+            <p>
+                The second painting is one of many people's favourites:
+                <i>The Cafe Terrace at Night</i>. The location at the Place
+                du Forum in Arles was refurbished to replicate van Gogh's
+                painting.
+            </p>
+
+            <img src="assets/img/cafe-terrace-at-night-van-gogh.jpg"
+                 alt="Van Gogh's painting of a cafe terrace at night"
+                 loading="lazy">
+        </section>
+
+        <section id="life">
+            <h2>Life, Suffering and Death</h2>
+
+            <p>
+                After his time at Arles, van Gogh moved to a former monastery
+                at nearby Saint-Remy. The building's garden and surrounding
+                countryside became the main subjects of his paintings.
+                Some of his works from this time are characterised by swirls,
+                such as <i>The Starry Night</i>.
+            </p>
+
+            <img src="assets/img/starry-night-van-gogh.jpg"
+                 alt="The Starry Night, showing a swirling sky above a village"
+                 loading="lazy">
+
+            <p>
+                Van Gogh suffered from mental illness all his life. He was
+                not commercially successful, and his suicide at aged 37
+                came after years of poverty.
+            </p>
+
+            <p>
+                Van Gogh is known to have sold only a single painting in
+                his lifetime; for 400 francs or about €1,800 in today's
+                value. In 1990, one of his paintings,
+                <i>Portrait of Dr. Gachet</i>, fetched $82.5 million at auction.
+            </p>
+
+            <p>
+                <b>Source</b>:
+                <i>All text and images from Wikipedia</i>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+        <p><a href="page-5.html">Visit the Ireland attractions page</a></p>
+        <a href="../index.html">Back to Home page</a>
+    </footer>
+</body>
+</html>

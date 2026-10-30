@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block with Image</title>
+    <meta name="description" content="A hero block with a background image and a dark overlay.">
+    <link rel="preload" href="assets/img/business.jpg" as="image">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .hero-heading {
+            text-shadow: 2px 2px 4px black;
+        }
+    </style>
+    <!-- Philipe Mendes Silva 83223 -->
+</head>
+<body class="bg-white font-sans text-slate-900">
+    <header class="relative flex min-h-[60vh] flex-col justify-center bg-[url('assets/img/business.jpg')] bg-cover bg-center px-6 py-16 text-center text-white md:min-h-[80vh]">
+        <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+
+        <div class="relative">
+            <h1 class="hero-heading mb-6 text-5xl font-bold tracking-tight md:text-7xl">
+                Working Together
+            </h1>
+            <h2 class="hero-heading text-2xl leading-relaxed md:text-3xl">
+                Sharing ideas and building new skills
+            </h2>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-3xl px-6 py-10">
+        <p class="mb-6 text-lg leading-relaxed">
+            This hero block uses a background image with a dark overlay.
+            The overlay and text shadow help the headings stand out.
+        </p>
+        <a href="../index.html" class="font-semibold text-blue-900 underline hover:text-blue-700">
+            Back to Home page
+        </a>
+    </main>
+</body>
+</html>
